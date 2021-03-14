@@ -1,0 +1,10 @@
+# Cockpit settings
+detektivo: #Calling to detektivo
+  engine: tntsearch #using the tntsearch
+  collections: #named the collections you need create a index for it
+     # this collection i just need found the name
+     products: [name] 
+     # this collection i will search for name or description
+     movements: [name, date]
+loadmodules:
+    - "home/cockpit_data/addons"

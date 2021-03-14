@@ -1,0 +1,231 @@
+{
+  "messages": {
+    "email": "Valid email is required",
+    "required": "This field is required",
+    "password": "Password is required",
+    "min": "This field must have no less than {length} characters",
+    "url": "Must be a valid URL",
+    "confirmed": "Passwords must match"
+  },
+  "errors": {
+    "BAD_TOKEN": "Bad token",
+    "WRONG_PASSWORD": "Wrong password",
+    "USER_DOES_NOT_EXIST": "User does not exists",
+    "PASSWORDS_DONT_MATCH": "Passwords don´t match",
+    "PASSWORD_TOO_SHORT_MIN_5": "Password too short, minimum 5 characters",
+    "BLOCKED_USER": "Too many failed login attempts, user blocked temporarely",
+    "SERVER_TIMEOUT_CONNECTION_ERROR": "Server is not responding, connection error",
+    "404": "404 Page not found",
+    "EMAIL_IS_NOT_VALID": "E-mail not valid",
+    "IS_EMPTY": "Empty fields",
+    "ERROR": "Error",
+    "MISSING": "Missing fields",
+    "NOT_FOUND_OR_ALREADY_VERIFIED": "Not found or already verified",
+    "NOT_FOUND_OR_ALREADY_USED": "Not found or already used",
+    "NOT_FOUND": "Not found",
+    "UNAUTHORIZED": "Unauthorized",
+    "EMAIL_ALREADY_EXISTS": "E-mail already exists",
+    "ID_MALFORMED": "ID malformed",
+    "ERROR_WITH_FILTER": "Error with filter",
+    "CITY_ALREADY_EXISTS": "City already exists",
+    "Missing user or password": "Missing user or password",
+    "Authentication failed": "Wrong password or Username",
+    "Collection not found": "Table not found on database"
+  },
+  "common": {
+    "DELETE": "Delete",
+    "CANCEL": "Cancel",
+    "OK": "Ok",
+    "SAVE": "Save",
+    "UPDATE": "Update",
+    "ADDED": "Added",
+    "NEW_UPDATED": "Updated",
+    "CONFIRMED": "Confirmed",
+    "DELETED": "Deleted",
+    "CANCELED": "Canceled",
+    "CONTINUE": "Continue",
+    "WARNING": "Warning",
+    "DO_YOU_REALLY_WANT_TO_DELETE_THIS_ITEM": "Do you really want to delete this item?",
+    "CLOSE": "Close",
+    "SAVED_SUCCESSFULLY": "Saved successfully",
+    "DELETED_SUCCESSFULLY": "Deleted successfully",
+    "CREATED": "Created At",
+    "UPDATED": "Updated At",
+    "GO_BACK": "Go back",
+    "CHANGE_SELECTED": "Change Search",
+    "NEW_RECORD": "Create New",
+    "GO_TO_LIST": "Select From List",
+    "SIMILIAR_RECORDS": "Similiar Record Found",
+    "LANGUAGE": "LANGUAGE"
+  },
+  "loading": {
+    "PLEASE_WAIT": "Please wait..."
+  },
+  "footer": {
+    "MADE_WITH": "Made with",
+    "BY": "by Drascom"
+  },
+  "adminItems": {
+    "MENU": "Menu",
+    "HOME": "Dashboard",
+    "ACCOUNTING": "Accounting",
+    "CUSTOMERS": "Customers",
+    "DEPOSITS": "Deposits",
+    "NEW": "Add New",
+    "LIST": "List",
+    "MY_PROFILE": "My Profile",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout"
+  },
+  "roles": {
+    "ADMIN": "Administrator",
+    "USER": "User"
+  },
+  "dataTable": {
+    "NEW_ITEM": "New Item",
+    "EDIT_ITEM": "Edit Item",
+    "CANCEL": "Cancel",
+    "SAVE": "Save",
+    "EDIT": "Edit",
+    "CONFIRM": "Record Receive",
+    "CONFIRMED": "Received",
+    "DELETE": "Delete",
+    "RESET": "Reset",
+    "ACTIONS": "Actions",
+    "ROWS_PER_PAGE": "Rows per page",
+    "NO_DATA": "No data",
+    "NO_RESULTS": "No results",
+    "OF": "of",
+    "SEARCH": "Search For Name"
+  },
+  "users": {
+    "TITLE": "Users",
+    "headers": {
+      "NAME": "Name",
+      "EMAIL": "E-mail",
+      "ROLE": "Role",
+      "VERIFIED": "Verified",
+      "CITY": "City",
+      "COUNTRY": "Country",
+      "PHONE": "Phone"
+    },
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password"
+  },
+  "home": {
+    "TITLE": "Protected Home",
+    "GREETING": "Welcome %{0}",
+    "WAITING_PAYMENTS": "Waiting ",
+    "RECEIVED_PAYMENTS": "Received ",
+    "COMPLETED_PAYMENTS": "Completed ",
+    "ALL_PAYMENTS": "All "
+  },
+  "newForm": {
+    "NEXT_MOVE_HEADER": "New transaction Recorded.",
+    "NEXT_MOVE_DESC": "What you want to do next ? ",
+    "NEXT_MOVE_NEW_RECORD": "Add new record",
+    "NEXT_MOVE_GO_TO_LIST": "Go to the list",
+    "STEP_HEADER_1": "CUSTOMER & SENDER INFORMATION",
+    "STEP_HEADER_2": "SURGERY & TRANSFER DATE",
+    "STEP_HEADER_3": "AMOUNT & CURENCY",
+    "STEP_HEADER_4": "RECEIVED DATE & AMOUNT",
+    "STEP_HEADER_5": "RECEIVE DOCUMENT",
+    "STEP_HEADER_6": "TRANSFER DOCUMENT",
+    "STEP_HEADER_7": "CHECK LIST",
+    "FORM_CUSTOMER_NAME": "Customer Name",
+    "FORM_SURGERY_DATE": "Surgery Date",
+    "FORM_SENDER_NAME": "Sender Name",
+    "FORM_TRANSFER_DATE": "Transferred On",
+    "FORM_RECEIVED_DATE": "Received Date",
+    "FORM_RECEIVED_AMOUNT": "Received Amount",
+    "FORM_AMOUNT": "Amount Taken",
+    "FORM_CURRENCY": "Currency",
+    "DIFFERENT_NAME": "Sender Name is different"
+  },
+  "customers": {
+    "TYPE_NAME": "Type Customer Name Surname"
+  },
+  "listing": {
+    "TITLE": "List of Transfers",
+    "INCOMING_DOCUMENT": "Transfer Document",
+    "RECEIVED_DOCUMENT": "Receive Document",
+    "CUSTOMER_NAME": "Customer Name",
+    "SENDER_NAME": "Sender Name",
+    "SURGERY_DATE": "Surgery Date",
+    "PAYMENT_DATE": "Transferred On",
+    "AMOUNT": " Amount Taken ",
+    "RECEIVED_AMOUNT": "Amount Received",
+    "RECEIVED_DATE": "Received at",
+    "STATUS": "Status"
+  },
+  "componentModules": {
+    "SELECTED_DOCUMENT": "Selected Document",
+    "CONFIRM_PAYMENT": "Confirm Payment",
+    "EDIT_PAYMENT": "Edit Payment"
+  },
+  "status": {
+    "ALL": "All Deposits",
+    "DONE": "Done",
+    "WAITING": "Waiting",
+    "COMPLETED": "Completed",
+    "COMPLETED_TEXT": "All completed. Thank You...",
+    "RECEIVED": "Received",
+    "NEED_CHECK": "Need Check",
+    "NEED_CHECK_TEXT": "Info entered but not arrived yet",
+    "CONFIRMED": "Confirmed",
+    "STATUS_WAITING_INFO": "Arrived but some info is missing.",
+    "STATUS_WAITING_PAYMENT": "Payment Waiting"
+  },
+  "login": {
+    "TITLE": "Login",
+    "DESCRIPTION": "This is a demo. Database resets every 30 mins. So anything you do will be lost after a short time.<br />E-mail: admin@admin.com <br />Password: 12345",
+    "EMAIL": "E-mail",
+    "USERNAME": "User Name",
+    "PASSWORD": "Password",
+    "LOGIN": "Login",
+    "FORGOT_PASSWORD": "Forgot password?",
+    "LOGGED_IN": "Successfully Loggedin"
+  },
+  "forgotPassword": {
+    "TITLE": "Forgot my password",
+    "EMAIL": "E-mail",
+    "DESCRIPTION": "Enter your E-mail address so we can send you a message with instructions to recover your password",
+    "RECOVER": "Recover",
+    "RESET_EMAIL_SENT": "We have sent a message to %{0} with instructions to recover your password"
+  },
+  "resetPassword": {
+    "TITLE": "Change Password",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password",
+    "CHANGE_PASSWORD": "Change Password",
+    "PASSWORD_CHANGED": "Password changed successfully"
+  },
+  "signup": {
+    "TITLE": "Signup",
+    "NAME": "Name",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password",
+    "SIGN_ME_UP": "Sign me up"
+  },
+  "verify": {
+    "TITLE": "E-mail verification",
+    "EMAIL_VERIFIED": "E-mail verified successfully"
+  },
+  "myProfile": {
+    "TITLE": "My profile",
+    "CHANGE_MY_PASSWORD": "Change My Password",
+    "CURRENT_PASSWORD": "Current Password",
+    "NEW_PASSWORD": "New Password",
+    "CONFIRM_NEW_PASSWORD": "Confirm New Password",
+    "PASSWORD_CHANGED": "Password changed successfully",
+    "NAME": "Name",
+    "EMAIL": "E-mail",
+    "PHONE": "Phone",
+    "CITY": "City",
+    "NO_RESULTS_FOUND": "No results found",
+    "COUNTRY": "Country",
+    "SAVE": "Save",
+    "PROFILE_SAVED_SUCCESSFULLY": "Profile saved successfuly"
+  }
+}
