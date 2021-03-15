@@ -1,7 +1,7 @@
 <template>
   <v-card class="mt-n12 mx-auto">
     <v-app-bar app>
-      <v-btn text to="/" exact>
+      <v-btn text to="/" exact v-show="searchStatus">
         <v-icon>mdi-home</v-icon> {{ $t('adminItems.HOME') }}
       </v-btn>
       <v-toolbar-items>
@@ -17,13 +17,7 @@
         </v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <v-btn x-small disabled text>
-        We have {{ TotalCount }} recorded customers
-      </v-btn>
-      <search />
-      <v-btn small icon class="ml-4 mr-4">
-        <v-icon dark>mdi-printer</v-icon>
-      </v-btn>
+      <search @searchStatus="setSearchStatus" />
     </v-app-bar>
 
     <v-container fluid grid-list-md>
@@ -43,7 +37,8 @@ export default {
     return {
       filter: 'AllCustomers',
       watchTable: 0,
-      newcustomer: false
+      newcustomer: false,
+      searchStatus: true
     }
   },
   components: {
@@ -74,6 +69,11 @@ export default {
     if (!(this.$store && this.$store.state && this.$store.state.commonStore)) {
       console.log('common yok oluşturuldu')
       this.$store.registerModule('commonStore', commonJS)
+    }
+  },
+  methods: {
+    setSearchStatus(event) {
+      this.searchStatus = event
     }
   },
   async created() {

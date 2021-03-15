@@ -84,7 +84,7 @@
         <p class="pt-8">{{ $t('customers.TYPE_NAME') }}</p>
         <BaseTextInput
           v-model="search"
-          :label="$t('listing.CUSTOMER_NAME')"
+          :label="$t('customers.CUSTOMER_NAME')"
           outlined
           autocomplete="off"
           class=""

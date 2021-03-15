@@ -3,20 +3,20 @@
     <v-dialog v-model="confirmation" persistent max-width="400">
       <v-card>
         <v-card-title class="headline">
-          {{ $t('newForm.NEXT_MOVE_HEADER') }}
+          {{ $t('payments.NEXT_MOVE_HEADER') }}
         </v-card-title>
 
         <v-card-text class="text-button">
-          {{ $t('newForm.NEXT_MOVE_DESC') }}
+          {{ $t('payments.NEXT_MOVE_DESC') }}
         </v-card-text>
 
         <v-card-actions class="justify-space-between">
           <v-btn outlined color="green darken-1" text @click="startNew">
-            {{ $t('newForm.NEXT_MOVE_NEW_RECORD') }}
+            {{ $t('payments.NEXT_MOVE_NEW_RECORD') }}
           </v-btn>
           <v-spacer />
           <v-btn outlined color="blue darken-1" text @click="goToList">
-            {{ $t('newForm.NEXT_MOVE_GO_TO_LIST') }}
+            {{ $t('payments.NEXT_MOVE_GO_TO_LIST') }}
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -29,7 +29,7 @@
           step="1"
           :color="stepStatus(1)"
         >
-          {{ $t('newForm.STEP_HEADER_1') }}
+          {{ $t('payments.STEP_HEADER_1') }}
         </v-stepper-step>
         <v-divider v-show="currStep < 3"></v-divider>
 
@@ -39,7 +39,7 @@
           step="2"
           :color="stepStatus(2)"
         >
-          {{ $t('newForm.STEP_HEADER_2') }}
+          {{ $t('payments.STEP_HEADER_2') }}
         </v-stepper-step>
         <v-divider v-show="currStep < 4"></v-divider>
 
@@ -49,7 +49,7 @@
           step="3"
           :color="stepStatus(3)"
         >
-          {{ $t('newForm.STEP_HEADER_3') }}
+          {{ $t('payments.STEP_HEADER_3') }}
         </v-stepper-step>
         <v-divider v-show="currStep > 2 && currStep <= 4"></v-divider>
 
@@ -59,7 +59,7 @@
           step="4"
           :color="stepStatus(4)"
         >
-          {{ $t('newForm.STEP_HEADER_4') }}
+          {{ $t('payments.STEP_HEADER_4') }}
         </v-stepper-step>
         <v-divider
           v-if="this.user.group !== 'acenta'"
@@ -73,7 +73,7 @@
           step="5"
           :color="stepStatus(5)"
         >
-          {{ $t('newForm.STEP_HEADER_5') }}
+          {{ $t('payments.STEP_HEADER_5') }}
         </v-stepper-step>
         <v-divider v-show="4 < currStep < 6"></v-divider>
 
@@ -84,7 +84,7 @@
           step="6"
           :color="stepStatus(6)"
         >
-          {{ $t('newForm.STEP_HEADER_6') }}
+          {{ $t('payments.STEP_HEADER_6') }}
         </v-stepper-step>
         <v-divider v-show="5 > currStep > 7"></v-divider>
 
@@ -94,7 +94,7 @@
           step="7"
           :color="stepStatus(7)"
         >
-          {{ $t('newForm.STEP_HEADER_7') }}
+          {{ $t('payments.STEP_HEADER_7') }}
         </v-stepper-step>
         <v-divider v-show="currStep > 6"></v-divider>
 
@@ -138,7 +138,7 @@
                   <v-col sm="6" cols="12">
                     <BaseTextInput
                       v-model="formData.customer_name"
-                      :label="$t('newForm.FORM_CUSTOMER_NAME')"
+                      :label="$t('payments.CUSTOMER_NAME')"
                       :rules="[validationRules.requiredField]"
                       @input="copySenderName"
                       outlined
@@ -147,13 +147,13 @@
                   <v-col sm="6" cols="12">
                     <BaseTextInput
                       v-model="formData.sender_name"
-                      :label="$t('newForm.FORM_SENDER_NAME')"
+                      :label="$t('payments.SENDER_NAME')"
                       :disabled="!customerNameStatus"
                       hint="use only sender is and different customer "
                       outlined
                     />
                     <BaseActionInput
-                      :label="$t('newForm.DIFFERENT_NAME')"
+                      :label="$t('payments.DIFFERENT_NAME')"
                       inset
                       outlined
                       @action="handleSenderName"
@@ -192,7 +192,7 @@
                   <v-col sm="6" cols="12">
                     <BaseDateInput
                       v-model="formData.surgery_date"
-                      :label="$t('newForm.FORM_SURGERY_DATE')"
+                      :label="$t('payments.SURGERY_DATE')"
                       hint="it may empty"
                       outlined
                     />
@@ -201,7 +201,7 @@
                     <BaseDateInput
                       v-model="formData.payment_date"
                       :max="new Date().toJSON().slice(0, 10)"
-                      :label="$t('newForm.FORM_TRANSFER_DATE')"
+                      :label="$t('payments.TRANSFER_DATE')"
                       :rules="[validationRules.requiredField]"
                       hint="Required"
                       outlined
@@ -239,7 +239,7 @@
                   <v-col sm="6" cols="12">
                     <BaseNumberInput
                       v-model="formData.total_amount"
-                      :label="$t('newForm.FORM_AMOUNT')"
+                      :label="$t('payments.AMOUNT')"
                       :rules="[validationRules.requiredField]"
                       hint="Only Numbers"
                       outlined
@@ -249,7 +249,7 @@
                     <BaseRadioInput
                       v-model="formData.currency"
                       :options="currencyOptions"
-                      :label="$t('newForm.FORM_CURRENCY')"
+                      :label="$t('payments.CURRENCY')"
                       hint="Only Numbers"
                       outlined
                     />
@@ -289,7 +289,7 @@
                   <v-col sm="6" cols="12">
                     <BaseDateInput
                       v-model="formData.received_date"
-                      :label="$t('listing.RECEIVED_DATE')"
+                      :label="$t('payments.RECEIVED_DATE')"
                       :rules="[validationRules.requiredField]"
                       :max="new Date().toJSON().slice(0, 10)"
                       outlined
@@ -298,7 +298,7 @@
                   <v-col sm="6" cols="12">
                     <BaseNumberInput
                       v-model="formData.net_amount"
-                      :label="$t('listing.RECEIVED_AMOUNT')"
+                      :label="$t('payments.RECEIVED_AMOUNT')"
                       :rules="[validationRules.requiredField]"
                       :hint="formData.currency"
                       outlined
@@ -332,7 +332,7 @@
           >
             <v-form ref="form5" v-model="form5" @submit.prevent="" class="mt-4">
               <BaseUploadModule
-                :label="$t('listing.RECEIVED_DOCUMENT')"
+                :label="$t('payments.RECEIVED_DOCUMENT')"
                 name="image_receive"
                 :key="turnover"
                 v-model="formData.image_receive"
@@ -366,7 +366,7 @@
           >
             <v-form ref="form6" v-model="form6" @submit.prevent="" class="mt-4">
               <BaseUploadModule
-                :label="$t('listing.INCOMING_DOCUMENT')"
+                :label="$t('payments.INCOMING_DOCUMENT')"
                 name="image_sent"
                 :key="turnover"
                 v-model="formData.image_sent"

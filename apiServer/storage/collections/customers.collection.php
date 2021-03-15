@@ -28,13 +28,15 @@
     array (
       'name' => 'avatar',
       'label' => '',
-      'type' => 'text',
+      'type' => 'asset',
       'default' => '',
       'info' => '',
       'group' => '',
       'localize' => false,
       'options' => 
       array (
+        '_id' => '',
+        'path' => '',
       ),
       'width' => '1-1',
       'lst' => true,
@@ -208,7 +210,7 @@
   'sortable' => false,
   'in_menu' => false,
   '_created' => 1612115842,
-  '_modified' => 1615406745,
+  '_modified' => 1615727658,
   'color' => '',
   'acl' => 
   array (

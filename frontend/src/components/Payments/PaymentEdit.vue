@@ -31,7 +31,7 @@
         <v-layout row wrap child-flex style="position: relative">
           <v-flex xs6 class="pa-4">
             <BaseUploadModule
-              :label="$t('listing.INCOMING_DOCUMENT')"
+              :label="$t('payments.INCOMING_DOCUMENT')"
               name="image_sent"
               :editMode="editable"
               v-model="formData.image_sent"
@@ -41,7 +41,7 @@
           </v-flex>
           <v-flex xs6 class="pa-4">
             <BaseUploadModule
-              :label="$t('listing.RECEIVED_DOCUMENT')"
+              :label="$t('payments.RECEIVED_DOCUMENT')"
               name="image_receive"
               :editMode="editable"
               v-model="formData.image_receive"
@@ -58,7 +58,7 @@
               <v-col cols="12" sm="6">
                 <BaseSelectList
                   v-model="formData.customer_name"
-                  :label="$t('listing.CUSTOMER_NAME')"
+                  :label="$t('payments.CUSTOMER_NAME')"
                   :rules="[validationRules.requiredField]"
                   :options="customerNameOptions"
                   autocomplete="off"
@@ -69,7 +69,7 @@
               <v-col cols="12" sm="6">
                 <BaseTextInput
                   v-model="formData.sender_name"
-                  :label="$t('listing.SENDER_NAME')"
+                  :label="$t('payments.SENDER_NAME')"
                   :rules="[validationRules.requiredField]"
                   autocomplete="off"
                   class="p7-5"
@@ -79,7 +79,7 @@
               <v-col ols="12" sm="6">
                 <BaseDateInput
                   v-model="formData.surgery_date"
-                  :label="$t('listing.SURGERY_DATE')"
+                  :label="$t('payments.SURGERY_DATE')"
                   prepend-icon="mdi-calendar"
                   class="p7-5"
                   :clearable="mode"
@@ -90,7 +90,7 @@
               <v-col cols="12" :sm="user.group != 'acenta' ? '6' : '12'">
                 <BaseDateInput
                   v-model="formData.payment_date"
-                  :label="$t('listing.PAYMENT_DATE')"
+                  :label="$t('payments.PAYMENT_DATE')"
                   prepend-icon="mdi-calendar"
                   class="p7-5"
                   :clearable="mode"
@@ -99,7 +99,7 @@
               <v-col cols="12" sm="">
                 <BaseNumberInput
                   v-model="formData.total_amount"
-                  :label="$t('listing.AMOUNT')"
+                  :label="$t('payments.AMOUNT')"
                   hint="Only Numbers"
                   autocomplete="off"
                   prepend-icon="mdi-cash-check"
@@ -110,7 +110,7 @@
               <v-col cols="12" sm="6">
                 <BaseDateInput
                   v-model="formData.received_date"
-                  :label="$t('listing.RECEIVED_DATE')"
+                  :label="$t('payments.RECEIVED_DATE')"
                   :rules="
                     formData.receiving_done
                       ? [validationRules.requiredField]
@@ -125,7 +125,7 @@
               <v-col cols="12" sm="6">
                 <BaseNumberInput
                   v-model="formData.net_amount"
-                  :label="$t('listing.RECEIVED_AMOUNT')"
+                  :label="$t('payments.RECEIVED_AMOUNT')"
                   :rules="
                     formData.receiving_done
                       ? [validationRules.requiredField]
@@ -144,7 +144,7 @@
                 <BaseRadioInput
                   v-model="formData.currency"
                   :options="currencyOptions"
-                  :label="$t('newForm.FORM_CURRENCY')"
+                  :label="$t('payments.CURRENCY')"
                   hint="Only Numbers"
                   :row="$vuetify.breakpoint.xs"
                   outlined
@@ -152,7 +152,7 @@
               </v-col>
               <v-col v-if="user.group != 'acenta'">
                 <v-card outlined class="px-4">
-                  <v-card-title> {{ $t('listing.STATUS') }} </v-card-title>
+                  <v-card-title> {{ $t('payments.STATUS') }} </v-card-title>
                   <v-card-text>
                     <v-switch
                       v-model="formData.receiving_done"

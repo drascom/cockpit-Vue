@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="align-start pa-0">
     <DialogPicture :selectedPicture="selectedPicture" v-model="showPicture" />
-    <h4 class="text-headline mb-2">{{ attrs.label }}</h4>
+    <h4 v-if="attrs.label" class="text-headline mb-2">{{ attrs.label }}</h4>
     <v-card flat>
       <!-- burası değiştir ve sil buton bölümü -->
       <v-card-actions v-if="avatar">
@@ -11,7 +11,7 @@
           @remove="removeFile"
           :key="turnover"
         >
-          <div slot="activator">
+          <div slot="activator" class="flex justify-space-around">
             <v-btn
               v-if="attrs.editMode"
               text
@@ -22,8 +22,10 @@
               class="grey--text"
               style="font-size: 0.6em"
             >
-              <v-icon :left="$vuetify.breakpoint.smAndUp">mdi-cloud-upload</v-icon>
-              Upload
+              <v-icon :left="$vuetify.breakpoint.smAndUp"
+                >mdi-cloud-upload</v-icon
+              >
+              Change
             </v-btn>
           </div>
         </ImageInput>
@@ -43,32 +45,38 @@
         </v-btn>
       </v-card-actions>
       <!-- burası hover view bölümü -->
-      <v-hover v-if="avatar">
-        <template #default="{ hover }">
-          <v-slide-x-transition>
-            <v-img
-              v-if="avatar.path"
-              :lazy-src="`${apiUrl}/storage/uploads${avatar.path}`"
-              :src="`${apiUrl}/storage/uploads${avatar.path}`"
-            >
-              <v-fade-transition>
-                <v-overlay v-if="hover" absolute color="#036358">
-                  <v-btn
-                    small
-                    color="success"
-                    class="white--text"
-                    @click="
-                      handleOpenImage(`${apiUrl}/storage/uploads${avatar.path}`)
-                    "
-                  >
-                    <v-icon>mdi-eye</v-icon> View
-                  </v-btn>
-                </v-overlay>
-              </v-fade-transition>
-            </v-img>
-          </v-slide-x-transition>
-        </template>
-      </v-hover>
+      <v-card-text v-if="avatar" class="pa-0">
+        <v-hover >
+          <template #default="{ hover }">
+            <v-slide-x-transition>
+              <v-img
+                max-height="200"
+                contain
+                v-if="avatar.path"
+                :lazy-src="`${apiUrl}/storage/uploads${avatar.path}`"
+                :src="`${apiUrl}/storage/uploads${avatar.path}`"
+              >
+                <v-fade-transition>
+                  <v-overlay v-if="hover" absolute color="#036358">
+                    <v-btn
+                      small
+                      color="success"
+                      class="white--text"
+                      @click="
+                        handleOpenImage(
+                          `${apiUrl}/storage/uploads${avatar.path}`
+                        )
+                      "
+                    >
+                      <v-icon>mdi-eye</v-icon> View
+                    </v-btn>
+                  </v-overlay>
+                </v-fade-transition>
+              </v-img>
+            </v-slide-x-transition>
+          </template>
+        </v-hover>
+      </v-card-text>
     </v-card>
     <!-- burası input bölümü -->
     <ImageInput
@@ -77,13 +85,13 @@
       @remove="removeFile"
       :key="turnover"
     >
-      <div v-if="!avatar" slot="activator">
+      <div v-if="!avatar" slot="activator" >
         <v-slide-x-transition>
           <v-avatar
             :size="$vuetify.breakpoint.xs ? '110px' : '150px'"
             v-ripple
             v-if="!avatar"
-            class="grey lighten-3 mb-3"
+            class="grey lighten-3 my-4"
           >
             <v-btn :loading="saving">
               UPLOAD <v-icon right dark> mdi-cloud-upload </v-icon>
@@ -105,9 +113,9 @@ export default {
   data() {
     return {
       show: false,
-      avatar: false,
       saving: false,
       turnover: 0,
+      avatar: this.value || false,
       showPicture: false,
       selectedPicture: '',
       apiUrl: process.env.VUE_APP_API_URL
@@ -138,6 +146,7 @@ export default {
       this.showPicture = true
     },
     save() {
+      console.log('save calıstı')
       this.saving = true
       this.uploadFile(this.avatar)
     },

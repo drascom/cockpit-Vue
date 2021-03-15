@@ -96,7 +96,7 @@
             <!-- @click:row="(item, slot) => slot.expand(!slot.isExpanded)" eğer row click gerekirse -->
             <!-- <template #top>
               <v-toolbar flat class="py-1">
-                <v-toolbar-title>{{ $t('listing.TITLE') }}</v-toolbar-title>
+                <v-toolbar-title>{{ $t('payments.TITLE') }}</v-toolbar-title>
                 <v-spacer></v-spacer>
               </v-toolbar>
             </template> -->
@@ -179,7 +179,7 @@
                         <v-list-item>
                           <v-list-item-content
                             >{{
-                              $t('listing.PAYMENT_DATE')
+                              $t('payments.PAYMENT_DATE')
                             }}:</v-list-item-content
                           >
                           <v-list-item-content class="align-end">
@@ -190,7 +190,7 @@
                           <v-list-item-content
                             :class="{ 'red--text': !item.total_amount }"
                           >
-                            {{ $t('listing.AMOUNT') }}:</v-list-item-content
+                            {{ $t('payments.AMOUNT') }}:</v-list-item-content
                           >
                           <v-list-item-content class="align-end">
                             {{ item.total_amount }} {{ item.currency }}
@@ -300,37 +300,37 @@ export default {
     headers() {
       return [
         {
-          text: this.$t('listing.SENDER_NAME'),
+          text: this.$t('payments.SENDER_NAME'),
           value: 'sender_name',
           fixed: true
         },
         {
-          text: this.$t('listing.CUSTOMER_NAME'),
+          text: this.$t('payments.CUSTOMER_NAME'),
           value: 'customer_name.name',
           fixed: true
         },
         {
-          text: this.$t('listing.PAYMENT_DATE'),
+          text: this.$t('payments.PAYMENT_DATE'),
           value: 'payment_date',
           fixed: true
         },
         {
-          text: this.$t('listing.RECEIVED_DATE'),
+          text: this.$t('payments.RECEIVED_DATE'),
           value: 'received_date',
           fixed: true
         },
         {
-          text: this.$t('listing.AMOUNT'),
+          text: this.$t('payments.AMOUNT'),
           value: 'total_amount',
           fixed: true
         },
         {
-          text: this.$t('listing.RECEIVED_AMOUNT'),
+          text: this.$t('payments.RECEIVED_AMOUNT'),
           value: 'net_amount',
           fixed: true
         },
         {
-          text: this.$t('listing.STATUS'),
+          text: this.$t('payments.STATUS'),
           value: 'status'
         }
       ]

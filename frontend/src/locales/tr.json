@@ -1,231 +1,224 @@
 {
-  "messages": {
-    "email": "Valid email is required",
-    "required": "This field is required",
-    "password": "Password is required",
-    "min": "This field must have no less than {length} characters",
-    "url": "Must be a valid URL",
-    "confirmed": "Passwords must match"
-  },
-  "errors": {
-    "Missing user or password": "Kullanıcı adı yada şifre eksik",
-    "Authentication failed": "Kullanıcı adı yada şifre yanlış",
-    "Collection not found": "Kayıt tablosu bulunamadı.",
-    "BAD_TOKEN": "Bad token",
-    "WRONG_PASSWORD": "Wrong password",
-    "USER_DOES_NOT_EXIST": "User does not exists",
-    "PASSWORDS_DONT_MATCH": "Passwords don´t match",
-    "PASSWORD_TOO_SHORT_MIN_5": "Password too short, minimum 5 characters",
-    "BLOCKED_USER": "Too many failed login attempts, user blocked temporarely",
-    "SERVER_TIMEOUT_CONNECTION_ERROR": "Server is not responding, connection error",
-    "404": "404 Page not found",
-    "EMAIL_IS_NOT_VALID": "E-mail not valid",
-    "IS_EMPTY": "Empty fields",
-    "ERROR": "Error",
-    "MISSING": "Missing fields",
-    "NOT_FOUND_OR_ALREADY_VERIFIED": "Not found or already verified",
-    "NOT_FOUND_OR_ALREADY_USED": "Not found or already used",
-    "NOT_FOUND": "Not found",
-    "UNAUTHORIZED": "Unauthorized",
-    "EMAIL_ALREADY_EXISTS": "E-mail already exists",
-    "ID_MALFORMED": "ID malformed",
-    "ERROR_WITH_FILTER": "Error with filter"
-  },
-  "common": {
-    "DELETE": "Sil",
-    "CANCEL": "İptal",
-    "OK": "Tamam",
-    "SAVE": "Kaydet",
-    "UPDATE": "Güncelle",
-    "ADDED": "Eklendi",
-    "NEW_UPDATED": "Güncellendi",
-    "CONFIRMED": "Onaylandı",
-    "DELETED": "Silindi",
-    "CANCELED": "İptal Edildi",
-    "CONTINUE": "Devam Et",
-    "WARNING": "Uyarı",
-    "DO_YOU_REALLY_WANT_TO_DELETE_THIS_ITEM": "Gerçekten silmek istiyor musunuz?",
-    "CLOSE": "Close",
-    "SAVED_SUCCESSFULLY": "Kaydedildi",
-    "DELETED_SUCCESSFULLY": "Silindi",
-    "CREATED": "Oluşturuldu",
-    "UPDATED": "Güncellendi",
-    "GO_BACK": "Geri",
-    "CHANGE_SELECTED": "Başka Ara",
-    "NEW_RECORD": "Kaydı Ekle",
-    "GO_TO_LIST": "Listeden Şeç",
-    "SIMILIAR_RECORDS": "Benzer Kayıtlar Bulundu.",
-    "LANGUAGE": "DİL"
-  },
-  "loading": {
-    "PLEASE_WAIT": "Please wait..."
-  },
-  "footer": {
-    "MADE_WITH": "Made with",
-    "BY": "by Drascom"
-  },
-  "adminItems": {
-    "HOME": "Anasayfa",
-    "MENU": "Menu",
-    "LIST": "Liste",
-    "NEW": "Yeni Kayıt",
-    "MY_PROFILE": "Profilim",
-    "CUSTOMERS": "Hastalar",
-    "DEPOSITS": "Depozitolar",
-    "SIGNUP": "Sign Up",
-    "LOGIN": "Giriş",
-    "LOGOUT": "Çıkış"
-  },
-  "roles": {
-    "ADMIN": "Administrator",
-    "USER": "User"
-  },
-  "dataTable": {
-    "NEW_ITEM": "New Item",
-    "EDIT_ITEM": "Edit Item",
-    "CANCEL": "Cancel",
-    "SAVE": "Save",
-    "EDIT": "Düzenle",
-    "CONFIRM": "Ödeme Ekle",
-    "CONFIRMED": "Ödeme Alındı",
-    "DELETE": "Sil",
-    "RESET": "Reset",
-    "ACTIONS": "Actions",
-    "ROWS_PER_PAGE": "Rows per page",
-    "NO_DATA": "No data",
-    "NO_RESULTS": "No results",
-    "OF": "of",
-    "SEARCH": "İsim arayın..."
-  },
-  "users": {
-    "TITLE": "Users",
-    "headers": {
-      "NAME": "Name",
-      "EMAIL": "E-mail",
-      "ROLE": "Role",
-      "VERIFIED": "Verified",
-      "CITY": "City",
-      "COUNTRY": "Country",
-      "PHONE": "Phone"
+    "messages": {
+        "email": "Valid email is required",
+        "required": "This field is required",
+        "password": "Password is required",
+        "min": "This field must have no less than {length} characters",
+        "url": "Must be a valid URL",
+        "confirmed": "Passwords must match"
     },
-    "PASSWORD": "Password",
-    "CONFIRM_PASSWORD": "Confirm Password"
-  },
-  "home": {
-    "TITLE": "Protected Home",
-    "GREETING": "Welcome %{0}",
-    "WAITING_PAYMENTS": "Bekleniyor",
-    "RECEIVED_PAYMENTS": "Bilgi Eksik",
-    "COMPLETED_PAYMENTS": "Tamamlandı",
-    "ALL_PAYMENTS": "Tüm Transferler"
-  },
-  "newForm": {
-    "NEXT_MOVE_HEADER": "Kayıt tamamlandı.",
-    "NEXT_MOVE_DESC": "Şimdi ne yapmak istersiniz ?",
-    "NEXT_MOVE_NEW_RECORD": "Yeni kayıt ekle",
-    "NEXT_MOVE_GO_TO_LIST": "Listeye dön",
-    "STEP_HEADER_1": "Gönderen & Hasta İsim",
-    "STEP_HEADER_2": "Ameliyat & Gönderim Tarihi",
-    "STEP_HEADER_3": "Gönderilen Miktar ve Doviz Cinsi",
-    "STEP_HEADER_4": "Alım Tarihi ve Alınan Miktar",
-    "STEP_HEADER_5": "Alındı Dekontu",
-    "STEP_HEADER_6": "Gelen Dekont",
-    "STEP_HEADER_7": "Kontrol Listesi",
-    "FORM_CUSTOMER_NAME": "Hasta Adı Soyadı",
-    "FORM_SURGERY_DATE": "Randevu Tarihi",
-    "FORM_SENDER_NAME": "Gönderen Adı Soyadı",
-    "FORM_TRANSFER_DATE": "Gönderim Tarihi",
-    "FORM_RECEIVED_DATE": "Geliş Tarihi",
-    "FORM_RECEIVED_AMOUNT": "Alınan Miktar",
-    "FORM_AMOUNT": "Gönderilen Miktar",
-    "FORM_CURRENCY": "Doviz Cinsi",
-    "DIFFERENT_NAME": "Gönderen Adı Farklı"
-  },
-  "customers": {
-    "TYPE_NAME": "Müşteri Adı yazınız"
-  },
-  "listing": {
-    "TITLE": "Transfer Listesi",
-    "INCOMING_DOCUMENT": "Gelen Dekont",
-    "RECEIVED_DOCUMENT": "Alındı Dekont",
-    "CUSTOMER_NAME": "Müşteri Adı",
-    "SENDER_NAME": "Gönderen",
-    "SURGERY_DATE": "Tedavi Tarihi",
-    "PAYMENT_DATE": "Gönderim Tarihi",
-    "AMOUNT": "Gönderilen Miktar ",
-    "RECEIVED_AMOUNT": "Alınan Miktar",
-    "RECEIVED_DATE": "Geliş Tarihi",
-    "STATUS": "Durum",
-    "DONE": "Geldi",
-    "WAITING": "Bekleniyor"
-  },
-  "componentModules": {
-    "SELECTED_DOCUMENT": "Dokuman",
-    "CONFIRM_PAYMENT": "Ödeme Onay Sayfası",
-    "EDIT_PAYMENT": "Düzenleme Sayfası"
-  },
-  "status": {
-    "ALL": "Tüm kayıtlar",
-    "DONE": "Done",
-    "WAITING": "Ödeme Bekleniyor",
-    "COMPLETED": "Tamamlandı",
-    "COMPLETED_TEXT": "İşlemi tamamlanmış kayıtlar",
-    "RECEIVED": "Tahsil edildi",
-    "NEED_CHECK": "Need Check",
-    "NEED_CHECK_TEXT": "Bilgisi girilmiş ödeme gelmeyen kayıtlar",
-    "CONFIRMED": "Onaylandı",
-    "STATUS_WAITING_INFO": "Ödeme alındı ama bilgiler eksik",
-    "STATUS_WAITING_PAYMENT": "Ödeme bekleniyor"
-  },
-  "login": {
-    "TITLE": "Hoşgeldiniz",
-    "EMAIL": "E-mail",
-    "USERNAME": "Kullanıcı Adı",
-    "PASSWORD": "Şifre",
-    "LOGIN": "Giriş",
-    "FORGOT_PASSWORD": "Şifremi Unuttum?",
-    "LOGGED_IN": "Giriş Yapıldı"
-  },
-  "forgotPassword": {
-    "TITLE": "Forgot my password",
-    "EMAIL": "E-mail",
-    "DESCRIPTION": "Enter your E-mail address so we can send you a message with instructions to recover your password",
-    "RECOVER": "Recover",
-    "RESET_EMAIL_SENT": "We have sent a message to %{0} with instructions to recover your password"
-  },
-  "resetPassword": {
-    "TITLE": "Change Password",
-    "PASSWORD": "Password",
-    "CONFIRM_PASSWORD": "Confirm Password",
-    "CHANGE_PASSWORD": "Change Password",
-    "PASSWORD_CHANGED": "Password changed successfully"
-  },
-  "signup": {
-    "TITLE": "Signup",
-    "NAME": "Name",
-    "EMAIL": "E-mail",
-    "PASSWORD": "Password",
-    "CONFIRM_PASSWORD": "Confirm Password",
-    "SIGN_ME_UP": "Sign me up"
-  },
-  "verify": {
-    "TITLE": "E-mail verification",
-    "EMAIL_VERIFIED": "E-mail verified successfully"
-  },
-  "myProfile": {
-    "TITLE": "Profil Bilgilerim",
-    "CHANGE_MY_PASSWORD": "Şifre Değiştir",
-    "CURRENT_PASSWORD": "Eski Şifre",
-    "NEW_PASSWORD": "Yeni Şifre",
-    "CONFIRM_NEW_PASSWORD": "Tekrar Yeni Şifre",
-    "PASSWORD_CHANGED": "Şifre başarıyla değişti",
-    "NAME": "Isim",
-    "EMAIL": "E-mail",
-    "PHONE": "Phone",
-    "CITY": "City",
-    "NO_RESULTS_FOUND": "No results found",
-    "COUNTRY": "Country",
-    "SAVE": "Kaydet",
-    "PROFILE_SAVED_SUCCESSFULLY": "Bilgileriniz kaydedildi."
-  }
+    "errors": {
+        "Missing user or password": "Kullanıcı adı yada şifre eksik",
+        "Authentication failed": "Kullanıcı adı yada şifre yanlış",
+        "Collection not found": "Kayıt tablosu bulunamadı.",
+        "BAD_TOKEN": "Bad token",
+        "WRONG_PASSWORD": "Wrong password",
+        "USER_DOES_NOT_EXIST": "User does not exists",
+        "PASSWORDS_DONT_MATCH": "Passwords don´t match",
+        "PASSWORD_TOO_SHORT_MIN_5": "Password too short, minimum 5 characters",
+        "BLOCKED_USER": "Too many failed login attempts, user blocked temporarely",
+        "SERVER_TIMEOUT_CONNECTION_ERROR": "Server is not responding, connection error",
+        "404": "404 Page not found",
+        "EMAIL_IS_NOT_VALID": "E-mail not valid",
+        "IS_EMPTY": "Empty fields",
+        "ERROR": "Error",
+        "MISSING": "Missing fields",
+        "NOT_FOUND_OR_ALREADY_VERIFIED": "Not found or already verified",
+        "NOT_FOUND_OR_ALREADY_USED": "Not found or already used",
+        "NOT_FOUND": "Not found",
+        "UNAUTHORIZED": "Unauthorized",
+        "EMAIL_ALREADY_EXISTS": "E-mail already exists",
+        "ID_MALFORMED": "ID malformed",
+        "ERROR_WITH_FILTER": "Error with filter"
+    },
+    "common": {
+        "DELETE": "Sil",
+        "CANCEL": "İptal",
+        "OK": "Tamam",
+        "SAVE": "Kaydet",
+        "UPDATE": "Güncelle",
+        "ADDED": "Eklendi",
+        "NEW_UPDATED": "Güncellendi",
+        "CONFIRMED": "Onaylandı",
+        "DELETED": "Silindi",
+        "CANCELED": "İptal Edildi",
+        "CONTINUE": "Devam Et",
+        "WARNING": "Uyarı",
+        "DO_YOU_REALLY_WANT_TO_DELETE_THIS_ITEM": "Gerçekten silmek istiyor musunuz?",
+        "CLOSE": "Close",
+        "SAVED_SUCCESSFULLY": "Kaydedildi",
+        "DELETED_SUCCESSFULLY": "Silindi",
+        "CREATED": "Oluşturuldu",
+        "UPDATED": "Güncellendi",
+        "GO_BACK": "Geri",
+        "CHANGE_SELECTED": "Başka Ara",
+        "NEW_RECORD": "Kaydı Ekle",
+        "GO_TO_LIST": "Listeden Şeç",
+        "SIMILIAR_RECORDS": "Benzer Kayıtlar Bulundu.",
+        "LANGUAGE": "DİL"
+    },
+    "loading": {
+        "PLEASE_WAIT": "Please wait..."
+    },
+    "footer": {
+        "MADE_WITH": "Made with",
+        "BY": "by Drascom"
+    },
+    "adminItems": {
+        "HOME": "Anasayfa",
+        "MENU": "Menu",
+        "LIST": "Liste",
+        "NEW": "Yeni Kayıt",
+        "MY_PROFILE": "Profilim",
+        "CUSTOMERS": "Hastalar",
+        "DEPOSITS": "Depozitolar",
+        "SIGNUP": "Sign Up",
+        "LOGIN": "Giriş",
+        "LOGOUT": "Çıkış"
+    },
+    "roles": {
+        "ADMIN": "Administrator",
+        "USER": "User"
+    },
+    "dataTable": {
+        "NEW_ITEM": "New Item",
+        "EDIT_ITEM": "Edit Item",
+        "CANCEL": "Cancel",
+        "SAVE": "Save",
+        "EDIT": "Düzenle",
+        "CONFIRM": "Ödeme Ekle",
+        "CONFIRMED": "Ödeme Alındı",
+        "DELETE": "Sil",
+        "RESET": "Reset",
+        "ACTIONS": "Actions",
+        "ROWS_PER_PAGE": "Rows per page",
+        "NO_DATA": "No data",
+        "NO_RESULTS": "No results",
+        "OF": "of",
+        "SEARCH": "İsim arayın..."
+    },
+    "users": {
+        "TITLE": "Users",
+        "headers": {
+            "NAME": "Name",
+            "EMAIL": "E-mail",
+            "ROLE": "Role",
+            "VERIFIED": "Verified",
+            "CITY": "City",
+            "COUNTRY": "Country",
+            "PHONE": "Phone"
+        },
+        "PASSWORD": "Password",
+        "CONFIRM_PASSWORD": "Confirm Password"
+    },
+    "home": {
+        "TITLE": "Protected Home",
+        "GREETING": "Welcome %{0}",
+        "WAITING_PAYMENTS": "Bekleniyor",
+        "RECEIVED_PAYMENTS": "Bilgi Eksik",
+        "COMPLETED_PAYMENTS": "Tamamlandı",
+        "ALL_PAYMENTS": "Tüm Transferler"
+    },
+    "customers": {
+        "TYPE_NAME": "Müşteri Adı yazınız",
+        "CUSTOMER_NAME": "Muşteri Adı"
+    },
+    "payments": {
+        "TITLE": "Transfer Listesi",
+        "INCOMING_DOCUMENT": "Gelen Dekont",
+        "RECEIVED_DOCUMENT": "Alındı Dekont",
+        "CUSTOMER_NAME": "Müşteri Adı",
+        "SENDER_NAME": "Gönderen Adı",
+        "SURGERY_DATE": "Randevu Tarihi",
+        "PAYMENT_DATE": "Gönderim Tarihi",
+        "AMOUNT": "Gönderilen Miktar ",
+        "RECEIVED_AMOUNT": "Alınan Miktar",
+        "RECEIVED_DATE": "Geliş Tarihi",
+        "TRANSFER_DATE": "Gönderim Tarihi",
+        "CURRENCY": "Doviz Cinsi",
+        "STATUS": "Durum",
+        "DONE": "Geldi",
+        "WAITING": "Bekleniyor",
+        "NEXT_MOVE_HEADER": "Kayıt tamamlandı.",
+        "NEXT_MOVE_DESC": "Şimdi ne yapmak istersiniz ?",
+        "NEXT_MOVE_NEW_RECORD": "Yeni kayıt ekle",
+        "NEXT_MOVE_GO_TO_LIST": "Listeye dön",
+        "STEP_HEADER_1": "Gönderen & Hasta İsim",
+        "STEP_HEADER_2": "Ameliyat & Gönderim Tarihi",
+        "STEP_HEADER_3": "Gönderilen Miktar ve Doviz Cinsi",
+        "STEP_HEADER_4": "Alım Tarihi ve Alınan Miktar",
+        "STEP_HEADER_5": "Alındı Dekontu",
+        "STEP_HEADER_6": "Gelen Dekont",
+        "STEP_HEADER_7": "Kontrol Listesi",
+        "DIFFERENT_NAME": "Gönderen Adı Farklı"
+    },
+    "componentModules": {
+        "SELECTED_DOCUMENT": "Dokuman",
+        "CONFIRM_PAYMENT": "Ödeme Onay Sayfası",
+        "EDIT_PAYMENT": "Düzenleme Sayfası"
+    },
+    "status": {
+        "ALL": "Tüm kayıtlar",
+        "DONE": "Done",
+        "WAITING": "Ödeme Bekleniyor",
+        "COMPLETED": "Tamamlandı",
+        "COMPLETED_TEXT": "İşlemi tamamlanmış kayıtlar",
+        "RECEIVED": "Tahsil edildi",
+        "NEED_CHECK": "Need Check",
+        "NEED_CHECK_TEXT": "Bilgisi girilmiş ödeme gelmeyen kayıtlar",
+        "CONFIRMED": "Onaylandı",
+        "STATUS_WAITING_INFO": "Ödeme alındı ama bilgiler eksik",
+        "STATUS_WAITING_PAYMENT": "Ödeme bekleniyor"
+    },
+    "login": {
+        "TITLE": "Hoşgeldiniz",
+        "EMAIL": "E-mail",
+        "USERNAME": "Kullanıcı Adı",
+        "PASSWORD": "Şifre",
+        "LOGIN": "Giriş",
+        "FORGOT_PASSWORD": "Şifremi Unuttum?",
+        "LOGGED_IN": "Giriş Yapıldı"
+    },
+    "forgotPassword": {
+        "TITLE": "Forgot my password",
+        "EMAIL": "E-mail",
+        "DESCRIPTION": "Enter your E-mail address so we can send you a message with instructions to recover your password",
+        "RECOVER": "Recover",
+        "RESET_EMAIL_SENT": "We have sent a message to %{0} with instructions to recover your password"
+    },
+    "resetPassword": {
+        "TITLE": "Change Password",
+        "PASSWORD": "Password",
+        "CONFIRM_PASSWORD": "Confirm Password",
+        "CHANGE_PASSWORD": "Change Password",
+        "PASSWORD_CHANGED": "Password changed successfully"
+    },
+    "signup": {
+        "TITLE": "Signup",
+        "NAME": "Name",
+        "EMAIL": "E-mail",
+        "PASSWORD": "Password",
+        "CONFIRM_PASSWORD": "Confirm Password",
+        "SIGN_ME_UP": "Sign me up"
+    },
+    "verify": {
+        "TITLE": "E-mail verification",
+        "EMAIL_VERIFIED": "E-mail verified successfully"
+    },
+    "myProfile": {
+        "TITLE": "Profil Bilgilerim",
+        "CHANGE_MY_PASSWORD": "Şifre Değiştir",
+        "CURRENT_PASSWORD": "Eski Şifre",
+        "NEW_PASSWORD": "Yeni Şifre",
+        "CONFIRM_NEW_PASSWORD": "Tekrar Yeni Şifre",
+        "PASSWORD_CHANGED": "Şifre başarıyla değişti",
+        "NAME": "Isim",
+        "EMAIL": "E-mail",
+        "PHONE": "Phone",
+        "CITY": "City",
+        "NO_RESULTS_FOUND": "No results found",
+        "COUNTRY": "Country",
+        "SAVE": "Kaydet",
+        "PROFILE_SAVED_SUCCESSFULLY": "Bilgileriniz kaydedildi."
+    }
 }

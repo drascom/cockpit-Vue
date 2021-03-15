@@ -132,7 +132,7 @@ export default {
     async saveItem(payload) {
       payload.sending_done = !!(payload.payment_date && payload.customer_name)
       payload.receiving_done = !!(payload.net_amount && payload.received_date)
-      payload.status = !!(payload.sending_done && payload.receiving_done)
+      payload.closed = !!(payload.sending_done && payload.receiving_done)
       await this.$store
         .dispatch('commonStore/save', {
           name: 'payments',

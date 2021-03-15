@@ -3,13 +3,12 @@
     :placeholder="$t('dataTable.SEARCH')"
     :value="$store.state.search.search"
     @input="$store.commit('setSearch', $event)"
-    @focus="searchClosed = false"
-    @blur="searchClosed = true"
+    @focus="setStatus(false)"
+    @blur="setStatus(true)"
     class="expanding-search mt-4"
     :class="{ closed: searchClosed && !$store.state.search.search }"
     prepend-inner-icon="mdi-magnify"
     dense
-    :shaped="!searchClosed"
     :outlined="!searchClosed"
     clearable
   ></v-text-field>
@@ -20,6 +19,12 @@ export default {
   data() {
     return {
       searchClosed: true
+    }
+  },
+  methods: {
+    setStatus(status) {
+      this.searchClosed = status
+      this.$emit('searchStatus', status)
     }
   }
 }
