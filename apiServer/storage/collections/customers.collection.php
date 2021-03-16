@@ -206,11 +206,29 @@
       array (
       ),
     ),
+    11 => 
+    array (
+      'name' => 'job',
+      'label' => '',
+      'type' => 'text',
+      'default' => '',
+      'info' => '',
+      'group' => '',
+      'localize' => false,
+      'options' => 
+      array (
+      ),
+      'width' => '1-1',
+      'lst' => true,
+      'acl' => 
+      array (
+      ),
+    ),
   ),
   'sortable' => false,
   'in_menu' => false,
   '_created' => 1612115842,
-  '_modified' => 1615727658,
+  '_modified' => 1615799197,
   'color' => '',
   'acl' => 
   array (

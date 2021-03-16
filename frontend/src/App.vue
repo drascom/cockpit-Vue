@@ -2,17 +2,12 @@
   <v-app>
     <Toolbar />
     <v-main class="text-center">
-      <v-container fluid>
         <transition name="fade" mode="out-in">
           <keep-alive include="Dashboard">
             <router-view :key="$route.fullPath" />
           </keep-alive>
         </transition>
-      </v-container>
     </v-main>
-    <transition name="fade" mode="in-out">
-      <Loading />
-    </transition>
     <Footer v-if="$vuetify.breakpoint.mdAndUp" />
   </v-app>
 </template>

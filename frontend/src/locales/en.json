@@ -122,7 +122,14 @@
     },
     "customers": {
         "TYPE_NAME": "Type Customer Name Surname",
-        "CUSTOMER_NAME": "Customer Name"
+        "CUSTOMER_NAME": "Customer Name",
+        "EMAIL": "E-mail",
+        "COUNTRY": "Country",
+        "PASSAPORT_NO": "Passaport No",
+        "PHONE": "Phone",
+        "DATE_OF_BIRTH": "BirthDate",
+        "ORIGIN": "Origin",
+        "JOB": "Job"
 
     },
     "payments": {

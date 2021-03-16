@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mt-n12 mx-auto">
+  <div>
     <v-app-bar app>
       <v-btn text to="/" exact v-show="searchStatus">
         <v-icon>mdi-home</v-icon> {{ $t('adminItems.HOME') }}
@@ -19,12 +19,11 @@
       <v-spacer></v-spacer>
       <search @searchStatus="setSearchStatus" />
     </v-app-bar>
-
-    <v-container fluid grid-list-md>
+    <v-container fluid class="mt-n16">
       <router-view :key="$route.fullPath" />
+      <BottomBar :pageName="'customers'" />
     </v-container>
-    <BottomBar :pageName="'customers'" />
-  </v-card>
+  </div>
 </template>
 
 <script>

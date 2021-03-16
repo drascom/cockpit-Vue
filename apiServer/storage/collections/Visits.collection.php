@@ -68,7 +68,7 @@
     ),
     3 => 
     array (
-      'name' => 'status',
+      'name' => 'active',
       'label' => '',
       'type' => 'moderation',
       'default' => '',
@@ -85,12 +85,39 @@
       ),
       'required' => true,
     ),
+    4 => 
+    array (
+      'name' => 'status',
+      'label' => '',
+      'type' => 'select',
+      'default' => '',
+      'info' => '',
+      'group' => '',
+      'localize' => false,
+      'options' => 
+      array (
+        'options' => 
+        array (
+          'a' => 'one',
+          'b' => 'two',
+        ),
+        'default' => 
+        array (
+          0 => 'a',
+        ),
+      ),
+      'width' => '1-1',
+      'lst' => true,
+      'acl' => 
+      array (
+      ),
+    ),
   ),
   'sortable' => false,
   'in_menu' => false,
   '_created' => 1612465911,
-  '_modified' => 1615406414,
-  'color' => '',
+  '_modified' => 1615906617,
+  'color' => '#FFCE54',
   'acl' => 
   array (
   ),
